@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hotel: MyString
+  room_no: 1
+
+two:
+  hotel: MyString
+  room_no: 1

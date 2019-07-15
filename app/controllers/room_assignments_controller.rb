@@ -1,0 +1,2 @@
+class RoomAssignmentsController < ApplicationController
+end
