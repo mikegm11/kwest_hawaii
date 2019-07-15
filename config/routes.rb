@@ -10,5 +10,10 @@ Rails.application.routes.draw do
   
   match("/", { :controller => "application", :action => "home", :via => "get" })
   
+  match("/itinerary",{ :controller => "application", :action => "itinerary", :via => "get" } )
+  
+  match("/kwestees", { :controller => "application", :action => "kwestees", :via => "get" }  )
+  
+  match("/packinglist", {:controller => "application", :action => "packinglist", :via => "get" })
   
 end
