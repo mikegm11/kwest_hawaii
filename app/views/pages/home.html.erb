@@ -1,7 +1,7 @@
-<% datetime = DateTime.now%>
+<% datetime = Date.today.to_s%>
 
 Day 
-<% if datetime.saturday? %>
+<% if datetime == Date.parse("July 16 2019").to_s %>
 1
 <div>
 What are we doing today?
