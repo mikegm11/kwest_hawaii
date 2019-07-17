@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KWESTSite</title>
+    <title>KWEST Hawaii</title>
     <%= csrf_meta_tags %>
-
+    <meta charset = "utf-8">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-<body>
-  <div class="container">
+<body style="background-color:lightblue;2font-family:Verdana;">
+
   <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="/">
-      KWEST Hawaii
-    </a>
-  </nav> 
-  </div>
+    <h1><a href="/">
+      KWEST Hawaii - navbar will go here
+    </a> </h1>
+    <h1><a href="/kwestees">KWESTEEs</a></a></h1>
+  </nav>
     
-    <%= yield %>
+  <%= yield %>
 </body>
+
 </html>

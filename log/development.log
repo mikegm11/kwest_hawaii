@@ -791,3 +791,565 @@ Processing by ApplicationController#home as HTML
 Completed 200 OK in 219ms (Views: 212.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:18:35 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `zone' for Date:Class):
+    1: <% datetime = Date.zone.today.to_s%>
+    2: 
+    3: Day 
+    4: <% if datetime == Date.zone.to_s %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb__2444202412929906683_42530600'
+app/controllers/application_controller.rb:5:in `home'
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:19:07 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `zone' for Date:Class):
+    1: <% datetime = Time.zone.today.to_s%>
+    2: 
+    3: Day 
+    4: <% if datetime == Date.zone.to_s %>
+    5: 1
+    6: <div>
+    7: What are we doing today?
+  
+app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb__2444202412929906683_43292740'
+app/controllers/application_controller.rb:5:in `home'
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:19:20 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 225ms (Views: 224.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:19:52 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:20:01 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:23:18 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:23:22 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:23:57 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:24:23 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:24:26 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-16 00:24:35 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-16 17:09:14 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 392ms (Views: 385.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-16 17:09:19 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-16 17:09:51 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-16 17:16:55 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-16 17:18:00 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-16 17:18:03 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-16 17:18:09 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-16 17:18:34 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-16 17:19:13 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-16 17:21:36 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:23:52 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:26:55 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 274ms (Views: 267.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:26:57 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:27:16 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:27:19 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:28:40 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:28:59 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:29:15 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:29:45 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:30:14 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 38.98.140.20 at 2019-07-16 22:30:32 +0000
+Cannot render console from 38.98.140.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:01:35 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 267ms (Views: 260.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:01:37 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kwestees" for 67.184.112.102 at 2019-07-17 00:01:39 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#kwestees as HTML
+  Rendering pages/kwestees.html.erb within layouts/application
+  Rendered pages/kwestees.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kwestees" for 67.184.112.102 at 2019-07-17 00:01:41 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#kwestees as HTML
+  Rendering pages/kwestees.html.erb within layouts/application
+  Rendered pages/kwestees.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:01:42 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:02:02 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:04:00 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:08:18 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ec2-user/environment/kwest_hawaii/app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:09:28 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home1.html.erb within layouts/application
+  Rendered pages/home1.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:09:32 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home1.html.erb within layouts/application
+  Rendered pages/home1.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:09:33 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home1.html.erb within layouts/application
+  Rendered pages/home1.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.9ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:10:03 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:11:26 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:11:28 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:11:30 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:10 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.4ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:13 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 26.7ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:31 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 214ms (Views: 207.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:33 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:36 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:37 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:37 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:38 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kwestees" for 67.184.112.102 at 2019-07-17 00:12:38 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#kwestees as HTML
+  Rendering pages/kwestees.html.erb within layouts/application
+  Rendered pages/kwestees.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:12:41 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:15:23 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 233ms (Views: 226.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:15:25 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:15:51 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:15:55 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:16:15 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:16:26 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 234ms (Views: 227.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:16:30 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:16:32 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kwestees" for 67.184.112.102 at 2019-07-17 00:17:40 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#kwestees as HTML
+  Rendering pages/kwestees.html.erb within layouts/application
+  Rendered pages/kwestees.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-17 00:17:40 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/home2.html.erb within layouts/application
+  Rendered pages/home2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+

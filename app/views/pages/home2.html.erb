@@ -1,0 +1,30 @@
+<% datetime = Time.zone.today.to_s%>
+
+<h1>Day 
+<% if datetime == Date.parse("July 16 2019").to_s %>
+1
+</h1>
+<div>
+What are we doing today?
+</div>
+
+
+<div>
+What should I bring/wear?
+</div>
+
+<% elsif datetime == Date.parse("July 15 2019").to_s %>
+
+2 </h1>
+<div>
+What are we doing today?
+</div>
+
+
+<div>
+What should I bring/wear?
+</div>
+
+
+
+<% end %>
