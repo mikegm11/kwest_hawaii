@@ -3,9 +3,9 @@ class ApplicationController < ActionController::Base
   
     def home
       a = Time.zone.today.to_s
-      if a == Date.parse("July 15 2020").to_s
+      if a == Date.parse("July 16 2019").to_s
         render("pages/home1.html.erb")
-      elsif a == Date.parse("July 16 2019").to_s
+      elsif a == Date.parse("July 17 2019").to_s
         render("pages/home2.html.erb")
       else
         render("pages/homeerror.html.erb")
