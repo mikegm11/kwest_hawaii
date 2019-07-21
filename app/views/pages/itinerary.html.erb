@@ -1,20 +1,122 @@
-<h2>Full <em>Itinerary</em></h2>
+<header>
+    <h2>Full Itinerary</h2>
+</header>
 
-<article></article>
-<h3>Day - 1 Flight *drop down button*</h3>
+<article>
+<h3>Day 1 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%> *drop down button*</h3>
+<h4>Hour-by-hour</h4>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td colspan="4">Saturday August 24</td>
+            </tr>
+            <tr>
+                <td>Start Time</td>
+                <td>End Time</td>
+                <td>Activity</td>
+                <td>Location</td>
+            </tr>
+            <tr>
+                <td>3:45am</td>
+                <td>4:15am</td>
+                <td>Meet to catch bus</td>
+                <td>Optima Horizons</td>
+            </tr>
+            <tr>
+                <td>4:15am</td>
+                <td>4:45am</td>
+                <td>Travel to O'Hare</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>4:45am</td>
+                <td>6:25am</td>
+                <td>Check-In and Hang Out at Airport</td>
+                <td>ORD</td>
+            </tr>
+            <tr>
+                <td>6:25am</td>
+                <td>10:40am</td>
+                <td>Flight to SFO</td>
+                <td>FLIGHT INFO</td>
+            </tr>
+            <tr>
+                <td>10:40am</td>
+                <td>11:55pm</td>
+                <td>Meet up with Apara, have a snack or two!</td>
+                <td>SFO</td>
+            </tr>
+            <tr>
+                <td>11:55pm</td>
+                <td>2:22pm</td>
+                <td>Flight to Honolulu</td>
+                <td>FLIGHT INFO</td>
+            </tr>
+            <tr>
+                <td>2:22pm</td>
+                <td>3:30pm</td>
+                <td>Travel to Waikiki Resort Hotel</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>3:30pm</td>
+                <td>6:45pm</td>
+                <td>Check In @ Hotel, Relax and Get Ready for Night</td>
+                <td>Hotel</td>
+            </tr>
+            <tr>
+                <td>6:45pm</td>
+                <td>7:00pm</td>
+                <td>Walk to Tanaka of Tokyo East</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>7:00pm</td>
+                <td>9:30pm</td>
+                <td>Hibachi Dinner</td>
+                <td>Tanaka of Tokyo East</td>
+            </tr>
+            <tr>
+                <td>9:30pm</td>
+                <td>10:00pm</td>
+                <td>Travel to Addiction Nightclub</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>10:00pm</td>
+                <td>MIDNIGHT(ish..)</td>
+                <td>Party w/ Bottle Service</td>
+                <td>Addiction Nightclub</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
+<section>
+    <h4>What do I need this day?</h4>
+    <ul>
+        <li>
+            Luggage - <a href="/packinglist">see packing list here</a>
+        </li>
+        <li>
+            Anything to be comfy on the plane
+        </li>
+        <li>
+            Theme for the night is Fun and Fancy Florals - *insert links here*
+        </li>
+    </ul>
 
 
 
 <section>
-<h3>Day 2 - Date *drop down button* </h3>
+<h3>Day 2 - <%= Emoji.find_by_alias("ocean").raw %> <%=Emoji.find_by_alias("sunny").raw %> <%=Emoji.find_by_alias("game_die").raw%> Date *drop down button* </h3>
 
 
     <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
             <tr>
-                <td colspan="4">Saturday August 24</td>
+                <td colspan="4">Sunday August 25</td>
             </tr>
             <tr>
                 <td>Start Time</td>
@@ -90,20 +192,23 @@
         <li>
             Coverups, gym shorts, shirts - whatever you need to be comfortable at Dukes
         </li>
+        <li>
+            Pizza and Game Night dress up "theme" is pajamas (tbh just wear whatever you feel comfortable in but onesies, pj pants, etc are all welcome and encouraged!!!)
+        </li>
     </ul>
     
 </section>
 
 
 
-<h3>Day 2 - Date *drop down button* </h3>
+<h3>Day 3 - <%= Emoji.find_by_alias("palm_tree").raw %> <%= Emoji.find_by_alias("turtle").raw %> <%= Emoji.find_by_alias("tropical_drink").raw %> Date *drop down button* </h3>
 
 
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
             <tr>
-                <td colspan="4">Saturday August 24</td>
+                <td colspan="4">Monday August 26</td>
             </tr>
             <tr>
                 <td>Start Time</td>
@@ -169,7 +274,7 @@
                 <td>8:00pm</td>
                 <td>10:00pm</td>
                 <td>Small Group Dinners</td>
-                <td>RESTAURANTS</td>
+                <td><a href="/kwestees#dinner1">See list here!</a></td>
             </tr>
             <tr>
                 <td>10:00pm</td>
@@ -185,24 +290,27 @@
     <h4>What do I need this day?</h4>
     <ul>
         <li>
-            Sunscreen!
+            Sunscreen! (are you seeing a pattern here?)
         </li>
         <li>
-            UPDATE
+            Comfortable shoes and clothes for a semi-active day
+        </li>
+        <li>
+            Tiki Bar Crawl theme is *insert here*
         </li>
     </ul>
     
 </section>    
 
 
-<h3>Day 3 - Date *drop down button* </h3>
+<h3>Day 4 - <%= Emoji.find_by_alias("airplane").raw %> <%= Emoji.find_by_alias("tropical_fish").raw%> <%=Emoji.find_by_alias("swimmer").raw%>Date *drop down button* </h3>
 
 
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
             <tr>
-                <td colspan="4">Saturday August 24</td>
+                <td colspan="4">Tuesday August 27</td>
             </tr>
             <tr>
                 <td>Start Time</td>
@@ -270,24 +378,102 @@
     <h4>What do I need this day?</h4>
     <ul>
         <li>
-            Sunscreen!
+            Luggage
         </li>
         <li>
-            UPDATE
+            Sunscreen (most likely!)
+        </li>
+        <li>
+            Swim stuff for the snorkel 
         </li>
     </ul>
     
 </section>  
 
-
-<h3>Day 5 - Date *drop down button* </h3>
+<h3>Day 5 - <%= Emoji.find_by_alias("volcano").raw%> <%= Emoji.find_by_alias("dancers").raw%> <%= Emoji.find_by_alias("question").raw%> Date *drop down button* </h3>
 
 
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
             <tr>
-                <td colspan="4">UPDATE August 24</td>
+                <td colspan="4">Wednesday August 28</td>
+            </tr>
+            <tr>
+                <td>Start Time</td>
+                <td>End Time</td>
+                <td>Activity</td>
+                <td>Location</td>
+            </tr>
+            <tr>
+                <td>7:00am</td>
+                <td>8:00am</td>
+                <td>Breakfast, pack lunches for the day</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>8:00am</td>
+                <td>9:00am</td>
+                <td>Travel to Volcano National Park</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>9:00am</td>
+                <td>4:00pm</td>
+                <td>Hike/Tour of Volcano National Park</td>
+                <td>Volcano National Park</td>
+            </tr>
+            <tr>
+                <td>4:00pm</td>
+                <td>5:00pm</td>
+                <td>Back to hotel to get ready for Luau/Big Reveal!</td>
+                <td>Big Reveal</td>
+            </tr>
+            <tr>
+                <td>5:00pm</td>
+                <td>8:00pm</td>
+                <td>LUAU</td>
+                <td>Royal Kona Resort</td>
+            </tr>
+            <tr>
+                <td>8:00pm</td>
+                <td>8:30pm</td>
+                <td>Travel to Chill'n (*note* do we maybe want the place hidden for KWESTEEs?)</td>
+                <td>BIG REVEAL</td>
+            </tr>
+            <tr>
+                <td>8:30pm</td>
+                <td>????</td>
+                <td>BIG REVEAL</td>
+                <td>Chill'n</td>
+            </tr>
+        </tbody>
+    </table>
+<section>
+    <h4>What do I need this day?</h4>
+    <ul>
+        <li>
+            Sunscreen!
+        </li>
+        <li>
+            Comfortable shoes and clothes to do a short hike and tour of the volcano park
+        </li>
+        <li>
+            Big Reveal theme is WHITE OUT (per Kellogg tradition) - white pants, white shirts, white dresses, white socks go nutz!
+        </li>
+    </ul>
+    
+</section> 
+
+
+<h3>Day 5 - <%= Emoji.find_by_alias("dolphin").raw %> <%= Emoji.find_by_alias("beers").raw %> <%= Emoji.find_by_alias("airplane").raw%> Date *drop down button* </h3>
+
+
+<h4>Hour-by-hour</h4>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td colspan="4">Thursday August 29</td>
             </tr>
             <tr>
                 <td>Start Time</td>
@@ -338,10 +524,28 @@
                 <td>Transit</td>
             </tr>
             <tr>
-                <td>6:20UPDATE HEREpm</td>
                 <td>6:20pm</td>
-                <td>Flight to Honolulu</td>
+                <td>7:45pm</td>
+                <td>Check-in at hotel, get ready for the night</td>
+                <td>Hotel</td>
+            </tr>
+            <tr>
+                <td>7:45pm</td>
+                <td>8:00pm</td>
+                <td>Travel to Chinatown</td>
                 <td>Transit</td>
+            </tr>
+            <tr>
+                <td>8:00pm</td>
+                <td>9:30pm</td>
+                <td>Small Group Dinners</td>
+                <td><a href="/kwestees#dinner2">See list here!</a></td>
+            </tr>
+            <tr>
+                <td>9:30pm</td>
+                <td>????</td>
+                <td>Chinatown Bar Crawl</td>
+                <td>Chinatown</td>
             </tr>
         </tbody>
     </table>
@@ -352,13 +556,92 @@
             Sunscreen!
         </li>
         <li>
-            UPDATE
+            Swim stuff for Dolphin Snorkel Tour
+        </li>
+        <li>
+            Coverups, gym shorts, whatever you need to be comfortable at Kona Brewing Co after snorkeling
+        </li>
+        <li>
+            Chinatown Bar Crawl theme is *insert theme here*
         </li>
     </ul>
     
 </section> 
 
 
+<h3>Day 6 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%> Date *drop down button* </h3>
 
+
+<h4>Hour-by-hour</h4>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td colspan="4">Friday August 31</td>
+            </tr>
+            <tr>
+                <td>Start Time</td>
+                <td>End Time</td>
+                <td>Activity</td>
+                <td>Location</td>
+            </tr>
+            <tr>
+                <td>Whenever you wake up</td>
+                <td>1:45pm</td>
+                <td>Freetime - leaders to provide activities</td>
+                <td>Hotel</td>
+            </tr>
+            <tr>
+                <td>2:00pm</td>
+                <td>2:30pm</td>
+                <td>Travel to Pearl Harbor</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>2:30pm</td>
+                <td>3:45pm</td>
+                <td>Pearl Harbor Exhibit</td>
+                <td>Pearl Harbor</td>
+            </tr>
+            <tr>
+                <td>3:45pm</td>
+                <td>7:00pm</td>
+                <td>Return to Hotel for Farewell Dinner!</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>3:00pm</td>
+                <td>3:15pm</td>
+                <td>Load up luggage and hop on shuttle</td>
+                <td>Royal Kona Resort</td>
+            </tr>
+            <tr>
+                <td>7:00pm</td>
+                <td>7:30pm</td>
+                <td>Travel to airpor</td>
+                <td>Transit</td>
+            </tr>
+            <tr>
+                <td>7:30pm</td>
+                <td>NEXT DAY</td>
+                <td>Airport & Flight to Chicago!</td>
+                <td>Airport/Flight INFO!</td>
+            </tr>
+        </tbody>
+    </table>
+<section>
+    <h4>What do I need this day?</h4>
+    <ul>
+        <li>
+            Sunscreen!
+        </li>
+        <li>
+            Luggage all packed and ready to go! (reminder to ditch and liquids over 3oz!)
+        </li>
+        <li>
+            Anything you need to be comfortable on the flight back! (maybe change of clothes for when you transfer in Seattle)
+        </li>
+    </ul>
+    
+</section> 
 
 </article>
