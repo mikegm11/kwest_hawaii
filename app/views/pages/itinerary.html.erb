@@ -1,11 +1,29 @@
+<style>
+    h2 {
+        color:red;
+        font-family: Georgia, "Times New Roman", serif;
+        find-size:2em;
+        font-weight:normal;
+        text-align: justify;
+    }
+    
+    table {
+        width:70%;
+        margin: 0 auto;
+    }
+    
+</style>
+
+
 <header>
     <h2>Full Itinerary</h2>
 </header>
 
 <article>
-<h3>Day 1 - Saturday August 24 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%> *drop down button*</h3>
+<h3 id="Days"><a href="#daycontent">Day 1 - Saturday August 24 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%> *drop down button*</h3></a>
+<section id="daycontent">
 <h4>Hour-by-hour</h4>
-    <table border="1">
+    <table border="1" id="daycontent">
         <tbody>
             <tr>
                 <td colspan="4">Saturday August 24</td>
@@ -90,10 +108,9 @@
             </tr>
         </tbody>
     </table>
-</section>
 
-<section>
-    <h4>What do I need this day?</h4>
+
+<h4>What do I need this day?</h4>
     <ul>
         <li>
             Luggage - <a href="/packinglist">see packing list here</a>
@@ -105,7 +122,7 @@
             Theme for the night is Fun and Fancy Florals - *insert links here*
         </li>
     </ul>
-
+</section>
 
 
 <section>
@@ -645,3 +662,19 @@
 </section> 
 
 </article>
+<script type="text/javascript">
+//declare all globals to hold the links and the button elements
+var dayLinks;
+var dayContent;
+    window.onload= function() {
+        //set initial day display
+        tabLinks = document.getElementById("days").getElementsByTagName("h3")
+        dayContent = document.getElementById("daycontent").getElementsByTagName("section")
+        //listen for clicks
+    }
+    
+    function(){
+        //open up days
+    }
+    
+</script>
