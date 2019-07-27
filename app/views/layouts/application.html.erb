@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <style>
-    body {
-      background-color: lightblue;
-      font-family: Georgia;
-      margin: 25px 50px 75px 100px;
-    }
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  
+  
+  
   </style>
   <head>
     <title>KWEST Hawaii</title>
@@ -17,25 +16,32 @@
 
 <body>
 
-  <nav class="navbar navbar-light bg-light">
-    <h1><a href="/">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">KWEST Hawaii</a>
+    
+    <a class="navbar-link" href="/">
       Home
-    </a> </h1>
+    </a>
     
-    <h1><a href="/kwestees">
+    
+    <a class="navbar-link" href="/kwestees">
       KWESTEEs & Groups
-    </a></a></h1>
+    </a>
     
-    <h1><a href="/itinerary">
+    <a class="navbar-link" href="/itinerary">
       Full Itinerary
-    </a></a></h1>
+    </a>
     
-    <h1><a href="/packinglist">
+    <a class="navbar-link" href="/packinglist">
       Packing List
-    </a></a></h1>
+    </a>
+
   </nav>
-    
+  
+  <div class="container-fluid" style="padding-top:70px">
+  
   <%= yield %>
+  </div>
 </body>
 
 </html>

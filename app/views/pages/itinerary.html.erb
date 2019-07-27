@@ -1,11 +1,4 @@
 <style>
-    h2 {
-        color:red;
-        font-family: Georgia, "Times New Roman", serif;
-        find-size:2em;
-        font-weight:normal;
-        text-align: justify;
-    }
     
     table {
         width:70%;
@@ -14,25 +7,27 @@
     
 </style>
 
+<body>
 
 <header>
     <h2>Full Itinerary</h2>
 </header>
 
 <article>
-<h3 id="Days"><a href="#daycontent">Day 1 - Saturday August 24 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%> *drop down button*</h3></a>
-<section id="daycontent">
+<div class="row"><div class="col"><h3 id="Days">Day 1 </h3></div><div class="col"><h3>August 24 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%></div></h3> <div class="col-sm-3"> <button class="btn btn-primary btn-block" data-toggle="collapse" style="background-color:red;" data-target="#day1content">See details</button>
+</h3></div></div>
+<div id="day1content" class="collapse">
 <h4>Hour-by-hour</h4>
-    <table border="1" id="daycontent">
+    <table border="1" id="daycontent" class="table-hover">
         <tbody>
             <tr>
                 <td colspan="4">Saturday August 24</td>
             </tr>
             <tr>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Activity</td>
-                <td>Location</td>
+                <td><b>Start Time</b></td>
+                <td><b>End Time</b></td>
+                <td><b>Activity</b></td>
+                <td><b>Location</b></td>
             </tr>
             <tr>
                 <td>3:45am</td>
@@ -122,12 +117,12 @@
             Theme for the night is Fun and Fancy Florals - *insert links here*
         </li>
     </ul>
-</section>
+</div>
 
 
-<section>
-<h3>Day 2 - Sunday August 25 - <%= Emoji.find_by_alias("ocean").raw %> <%=Emoji.find_by_alias("sunny").raw %> <%=Emoji.find_by_alias("game_die").raw%> Date *drop down button* </h3>
-
+<div class="row"><div class="col"><h3>Day 2 </h3> </div><div class="col"> <h3> August 25 - <%= Emoji.find_by_alias("ocean").raw %> <%=Emoji.find_by_alias("sunny").raw %> <%=Emoji.find_by_alias("game_die").raw%> </h3></div> <div class="col-sm-3"><button class="btn btn-primary btn-block" data-toggle="collapse" style="background-color:red;" data-target="#day2content">See details</button></div></div>
+</h3>
+<section id="day2content" class="collapse">
 
     <h4>Hour-by-hour</h4>
     <table border="1">
@@ -192,9 +187,7 @@
             
         </tbody>
     </table>
-</section>
 
-<section>
     <h4>What do I need this day?</h4>
     <ul>
         <li>
@@ -218,8 +211,10 @@
 
 
 
-<h3>Day 3 - Monday August 26 - <%= Emoji.find_by_alias("palm_tree").raw %> <%= Emoji.find_by_alias("turtle").raw %> <%= Emoji.find_by_alias("tropical_drink").raw %> Date *drop down button* </h3>
+<div class="row"><div class="col"><h3>Day 3</h3></div><div class="col"><h3>August 26 - <%= Emoji.find_by_alias("palm_tree").raw %> <%= Emoji.find_by_alias("turtle").raw %> <%= Emoji.find_by_alias("tropical_drink").raw %> </h3></div> <div class="col-sm-3"><button class="btn btn-primary btn-block" data-toggle="collapse" style="background-color:red;" data-target="#day3content">See details</button></div>
+</h3></div>
 
+<section id="day3content" class="collapse">
 
 <h4>Hour-by-hour</h4>
     <table border="1">
@@ -303,7 +298,7 @@
         </tbody>
     </table>
     
-<section>
+
     <h4>What do I need this day?</h4>
     <ul>
         <li>
@@ -320,9 +315,10 @@
 </section>    
 
 
-<h3>Day 4 - Tuesday August 27 - <%= Emoji.find_by_alias("airplane").raw %> <%= Emoji.find_by_alias("tropical_fish").raw%> <%=Emoji.find_by_alias("swimmer").raw%>Date *drop down button* </h3>
+<h3>Day 4 - August 27 - <%= Emoji.find_by_alias("airplane").raw %> <%= Emoji.find_by_alias("tropical_fish").raw%> <%=Emoji.find_by_alias("swimmer").raw%> <button class="btn btn-primary" data-toggle="collapse" style="background-color:red;" data-target="#day4content">See details</button>
+</h3>
 
-
+<section id="day4content" class="collapse">
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
@@ -391,7 +387,7 @@
             </tr>
         </tbody>
     </table>
-<section>
+
     <h4>What do I need this day?</h4>
     <ul>
         <li>
@@ -407,9 +403,10 @@
     
 </section>  
 
-<h3>Day 5 - Wednesday August 28 - <%= Emoji.find_by_alias("volcano").raw%> <%= Emoji.find_by_alias("dancers").raw%> <%= Emoji.find_by_alias("question").raw%> Date *drop down button* </h3>
+<h3>Day 5 - August 28 - <%= Emoji.find_by_alias("volcano").raw%> <%= Emoji.find_by_alias("dancers").raw%> <%= Emoji.find_by_alias("question").raw%> <button class="btn btn-primary" data-toggle="collapse" style="background-color:red;" data-target="#day5content">See details</button>
+</h3>
 
-
+<section id="day5content" class="collapse">
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
@@ -466,7 +463,7 @@
             </tr>
         </tbody>
     </table>
-<section>
+
     <h4>What do I need this day?</h4>
     <ul>
         <li>
@@ -483,9 +480,10 @@
 </section> 
 
 
-<h3>Day 6 - Thursday August 29 - <%= Emoji.find_by_alias("dolphin").raw %> <%= Emoji.find_by_alias("beers").raw %> <%= Emoji.find_by_alias("airplane").raw%> Date *drop down button* </h3>
+<h3>Day 6 - August 29 - <%= Emoji.find_by_alias("dolphin").raw %> <%= Emoji.find_by_alias("beers").raw %> <%= Emoji.find_by_alias("airplane").raw%> <button class="btn btn-primary" data-toggle="collapse" style="background-color:red;" data-target="#day6content">See details</button>
+</h3>
 
-
+<section id="day6content" class="collapse">
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
@@ -566,7 +564,7 @@
             </tr>
         </tbody>
     </table>
-<section>
+
     <h4>What do I need this day?</h4>
     <ul>
         <li>
@@ -586,9 +584,11 @@
 </section> 
 
 
-<h3>Day 7 - Friday August 31 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%> Date *drop down button* </h3>
+<div class="panel-group"> <div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title"><a data-toggle="collapse" href="#day7content">Day 7 - August 31 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%> </a> </h3>
+</div>
 
-
+<div id="day7content" class="panel-collapse collapse">
+    <div class="panel-body">
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
@@ -645,7 +645,8 @@
             </tr>
         </tbody>
     </table>
-<section>
+</div>
+<div class="panel-footer">
     <h4>What do I need this day?</h4>
     <ul>
         <li>
@@ -658,10 +659,13 @@
             Anything you need to be comfortable on the flight back! (maybe change of clothes for when you transfer in Seattle)
         </li>
     </ul>
-    
-</section> 
+</div>
+</div>
+</div>
+</div> 
 
 </article>
+</body>
 <script type="text/javascript">
 //declare all globals to hold the links and the button elements
 var dayLinks;
@@ -676,5 +680,5 @@ var dayContent;
     function(){
         //open up days
     }
-    
+
 </script>
