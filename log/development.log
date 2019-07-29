@@ -4166,3 +4166,156 @@ Processing by ApplicationController#home as HTML
 Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 67.184.112.102 at 2019-07-27 21:01:04 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 314ms (Views: 307.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-27 21:06:58 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 67.184.112.102 at 2019-07-27 21:34:57 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kwest_hawaii/app/views/pages/homeerror.html.erb:8: syntax error, unexpected '<', expecting end
+<h2>We are <%= c.to_i ;@output...
+^
+/home/ec2-user/environment/kwest_hawaii/app/views/pages/homeerror.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+<h2>We are <%= c.to_i ;@output_buffer.s...
+       ^~~):
+  
+app/views/pages/homeerror.html.erb:8: syntax error, unexpected '<', expecting end
+app/views/pages/homeerror.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/controllers/application_controller.rb:12:in `home'
+Started GET "/" for 67.184.112.102 at 2019-07-27 21:35:54 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (109.7ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1+)):
+    3: <% c = b-a %>
+    4: <% url = "https://api.darksky.net/forecast/1f414016e2b4256a5aabfc167ee11e95/21.28,157.82" %>
+    5: <% parsed_data = JSON.parse(open(url).read) %>
+    6: <% current_temp = parsed_data.dig()%>
+    7: 
+    8: <h2>We are <%= c.to_i %> days away!</h2>
+    9: 
+  
+app/views/pages/homeerror.html.erb:6:in `dig'
+app/views/pages/homeerror.html.erb:6:in `_app_views_pages_homeerror_html_erb__3787194815752582752_69896935374920'
+app/controllers/application_controller.rb:12:in `home'
+Started GET "/" for 67.184.112.102 at 2019-07-27 21:36:06 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (330.4ms)
+Completed 500 Internal Server Error in 333ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_temp' for #<#<Class:0x0000000005047db0>:0x00007f24447a31a8>
+Did you mean?  current_page?):
+     7: <h2>We are <%= c.to_i %> days away!</h2>
+     8: 
+     9: <body>
+    10:     The temperature is <%= current_temp %>
+    11:     
+    12:     
+    13:     coordinates 21.2754° N, 157.8236° W
+  
+app/views/pages/homeerror.html.erb:10:in `_app_views_pages_homeerror_html_erb__3787194815752582752_69896872202140'
+app/controllers/application_controller.rb:12:in `home'
+Started GET "/" for 67.184.112.102 at 2019-07-27 21:36:18 +0000
+Cannot render console from 67.184.112.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (98.8ms)
+Completed 200 OK in 386ms (Views: 385.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-29 17:05:42 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (211.9ms)
+Completed 200 OK in 595ms (Views: 588.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-29 17:05:48 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (166.4ms)
+Completed 200 OK in 196ms (Views: 195.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-29 17:06:18 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (100.1ms)
+Completed 200 OK in 131ms (Views: 130.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-29 17:06:34 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (120.5ms)
+Completed 200 OK in 425ms (Views: 417.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.238.21.34 at 2019-07-29 17:07:00 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#home as HTML
+  Rendering pages/homeerror.html.erb within layouts/application
+  Rendered pages/homeerror.html.erb within layouts/application (96.3ms)
+Completed 200 OK in 126ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kwestees" for 50.238.21.34 at 2019-07-29 17:11:47 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#kwestees as HTML
+  Rendering pages/kwestees.html.erb within layouts/application
+  Rendered pages/kwestees.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itinerary" for 50.238.21.34 at 2019-07-29 17:13:05 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#itinerary as HTML
+  Rendering pages/itinerary.html.erb within layouts/application
+  Rendered pages/itinerary.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packinglist" for 50.238.21.34 at 2019-07-29 17:14:19 +0000
+Cannot render console from 50.238.21.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#packinglist as HTML
+  Rendering pages/packinglist.html.erb within layouts/application
+  Rendered pages/packinglist.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+

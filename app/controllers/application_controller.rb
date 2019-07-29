@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
+  
     def home
       a = Time.zone.today.to_s
       if a == Date.parse("July 16 2019").to_s
@@ -23,5 +24,10 @@ class ApplicationController < ActionController::Base
     def packinglist
       render("pages/packinglist.html.erb")
     end
+  
+    def get_temp
+      
+    end
+  
   
 end
