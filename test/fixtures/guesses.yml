@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  program: MyString
+  previous_job: MyString
+  previous_city: MyString
+  hometown: MyString
+  internship: MyString
+  undergrad: MyString
+  name: MyString
+  add_info: MyString
+
+two:
+  program: MyString
+  previous_job: MyString
+  previous_city: MyString
+  hometown: MyString
+  internship: MyString
+  undergrad: MyString
+  name: MyString
+  add_info: MyString

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :guesses
   resources :room_assignments
   resources :rooms
   resources :meals
@@ -15,5 +16,11 @@ Rails.application.routes.draw do
   match("/kwestees", { :controller => "application", :action => "kwestees", :via => "get" }  )
   
   match("/packinglist", {:controller => "application", :action => "packinglist", :via => "get" })
+  
+  match("/bigreveal", {:controller => "application", :action=> "bigreveal", :via => "get"})
+  
+  match("/new_guess_form", { :controller => "guesses", :action => "blank_form", :via => "get" })
+  match("/insert_guess_record", { :controller => "guesses", :action => "save_new_info", :via => "post" })  
+  match("/guesses/:name", {:controller => "guesses", :action => "list", :via => "get"})
   
 end

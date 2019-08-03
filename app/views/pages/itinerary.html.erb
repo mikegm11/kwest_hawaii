@@ -3,14 +3,24 @@
     table {
         width:70%;
         margin: 0 auto;
+        border: 1px solid black;
+    }
+    
+    #day{
+        background-color:gray;
+    }
+    
+    #topline{
+        background-color: gray;
     }
     
 </style>
 
-<body>
+<body style="background-color=#a89532;">
 
 <header>
     <h2>Full Itinerary</h2>
+    Below is our full itinerary for KWEST Hawaii. Click a day to see the hour-by-hour details & things you need for the day!
 </header>
 
 <article>
@@ -21,13 +31,13 @@
     <table border="1" id="daycontent" class="table-hover">
         <tbody>
             <tr>
-                <td colspan="4">Saturday August 24</td>
+                <td colspan="4" id="day">Saturday August 24</td>
             </tr>
             <tr>
-                <td><b>Start Time</b></td>
-                <td><b>End Time</b></td>
-                <td><b>Activity</b></td>
-                <td><b>Location</b></td>
+                <td id="topline"><b>Start Time</b></td>
+                <td id="topline"><b>End Time</b></td>
+                <td id="topline"><b>Activity</b></td>
+                <td id="topline"><b>Location</b></td>
             </tr>
             <tr>
                 <td>3:45am</td>
@@ -584,8 +594,11 @@
 </section> 
 
 
-<div class="panel-group"> <div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title"><a data-toggle="collapse" href="#day7content">Day 7 - August 31 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%> </a> </h3>
-</div>
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day7content"><h3 class="panel-title" style="color:#34FBED;">Day 7 - August 31 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%></h3></button>
+
+<!--<div class="panel-group"> <div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title"><a data-toggle="collapse" href="#day7content">Day 7 - August 31 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%> </a> </h3>
+</div> -->
+
 
 <div id="day7content" class="panel-collapse collapse">
     <div class="panel-body">

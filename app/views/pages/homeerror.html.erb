@@ -4,12 +4,12 @@
 <% url = "https://api.darksky.net/forecast/1f414016e2b4256a5aabfc167ee11e95/21.28,157.82" %>
 <% parsed_data = JSON.parse(open(url).read) %>
 
-<h2>We are <%= c.to_i %> days away!</h2>
+<h2 style="color:white;">We are <%= c.to_i %> days away!</h2>
 
 <body>
     
-    <section>
-    The temperature is <%= parsed_data.fetch("currently").fetch("temperature") %>.
+    <section style="color:white;">
+    Currently, the temperature is <%= parsed_data.fetch("currently").fetch("temperature") %> Fahrenheit.
     The forecast is <%= parsed_data.fetch("currently").fetch("summary").downcase%>.
     </section>
     

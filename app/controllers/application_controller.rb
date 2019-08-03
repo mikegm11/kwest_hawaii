@@ -13,6 +13,10 @@ class ApplicationController < ActionController::Base
       end
     end
     
+    def bigreveal
+      render("pages/bigreveal.html.erb")
+    end
+    
     def itinerary
         render("pages/itinerary.html.erb")
     end

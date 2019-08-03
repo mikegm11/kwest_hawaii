@@ -8,6 +8,8 @@ end
 
 gem 'twilio-ruby'
 
+gem 'ransack'
+
 gem 'devise', github: 'plataformatec/devise'
 gem 'gemoji'
 

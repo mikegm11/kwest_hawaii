@@ -3,36 +3,52 @@
   <style>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   
+  body, html {
+    height: 100%;
+  }
   
+  .bg { 
+        background-color: #FE7450;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif
+  }
+
+  .container-fluid{
+        color: white;
+  }
+  
+  button{
+    background-color:white;
+  }
   
   </style>
   <head>
     <title>KWEST Hawaii</title>
     <%= csrf_meta_tags %>
     <meta charset = "utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Poppins&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-<body>
+<body class="bg">
 
-  <nav class="navbar navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">KWEST Hawaii</a>
+  <nav class="navbar navbar-light fixed-top" style="background-color: #21A4B9; font-family:'Lobster',cursive;font-size:1.5rem;">
+    <a class="navbar-link" href="/" style="color:#34FBED;">KWEST Hawaii</a>
     
-    <a class="navbar-link" href="/">
-      Home
+    
+    <a class="navbar-link" href="/kwestees" style="color:#34FBED;">
+      List of KWESTees
     </a>
     
-    
-    <a class="navbar-link" href="/kwestees">
-      KWESTEEs & Groups
-    </a>
-    
-    <a class="navbar-link" href="/itinerary">
+    <a class="navbar-link" href="/itinerary" style="color:#34FBED;">
       Full Itinerary
     </a>
     
-    <a class="navbar-link" href="/packinglist">
+    <a class="navbar-link" href="/packinglist" style="color:#34FBED;">
       Packing List
     </a>
 

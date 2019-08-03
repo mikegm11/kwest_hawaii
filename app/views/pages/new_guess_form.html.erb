@@ -1,0 +1,98 @@
+<h3>Who are your KWESTees?! With your group fill out the form below for everyone!</h3>
+<h5>When you submit, it will reroute you back to this blank form. Tonight at Big Reveal, everyone will get up one by one to read each groups guess about themselves - feel free to be creative and fun/silly!</h5>
+
+<section>
+<form action="/insert_guess_record" method="post" enctype="multipart/form-data">
+    
+    <div>
+    <label for="name_dropdown">
+    Name
+    </label>
+      <select id="name_dropdown" name="name" id="name" >
+        <option value="Name">
+          Name
+        </option>
+        <option value="malortMike">
+          Malort Mike
+        </option>
+        <option value="justJordan">
+          Just Jordan
+        </option>
+        <option value="hHolly">
+          Holly
+        </option>
+  </select>
+    
+  <label for="program">
+      <p>Program/JV?</p>
+      </label>
+    <select id="program" name="program">
+      <option value= "2Y"><%=Emoji.find_by_alias("two").raw%>Y</option>
+      <option value= "1Y"><%=Emoji.find_by_alias("one").raw%>Y</option>
+      <option value= "MMM"> MMM <%=Emoji.find_by_alias("art").raw%></option>
+      <option value= "JD-MBA"> JD-MBA <%=Emoji.find_by_alias("necktie").raw%></option>
+      <option value= "MD-MBA"> MD-MBA<%=Emoji.find_by_alias("pill").raw%></option>
+      <option value= "JV"> JV <%=Emoji.find_by_alias("purple_heart").raw%></option>
+    </select>
+    <div>
+    <label for="undergrad">
+      Undergrad:
+    </label>
+    <input type="text" cols="40" rows="1" id="undergrad" name="undergrad" value="undergrad"></input>
+  </div>
+  
+<div>
+<label for="previous_job">
+      Previous Job:
+    </label>
+    <input type="text" cols="40" rows="1" id="previous_job" name="previous_job" value="previous_job"></input>
+  </div>
+ 
+<div>
+<label for="previous_city">
+      Previous City:
+    </label>
+    <input type="text" cols="40" rows="1" id="previous_city" name="previous_city" value="previous_city"></input>
+  </div>
+
+<div>
+<label for="hometown">
+      Hometown:
+    </label>
+    <input type="text" cols="40" rows="1" id="hometown" name="hometown" value="hometown"></input>
+  </div>
+  
+    <div>
+    <label for="partner_dropdown">
+    Secret Couple/Partner?!
+    </label>
+      <select id="partner_dropdown" name="partner" id="partner">
+        <option value="n/a">
+          N/A
+        </option>
+        <option value="malortMike">
+          Malort Mike
+        </option>
+        <option value="justJordan">
+          Just Jordan
+        </option>
+        <option value="hHolly">
+          Holly
+        </option>
+  </select>
+
+<div>
+<label for="add_info">
+      Anything else (favorite Beyonce song, favorite city, any other random guess you'd like to make!)?:
+    </label>
+    <input type="text" cols="40" rows="1" id="add_info" name="add_info" value="add_info"></input>
+  </div>
+
+
+  <div>
+    <button type="submit" class= "btn btn-primary btn-lg btn-block" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;">
+    SUBMIT
+    </button>
+    </div>
+</form>    
+</section>
