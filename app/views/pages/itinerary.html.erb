@@ -6,12 +6,24 @@
         border: 1px solid black;
     }
     
-    #day{
+    td#day{
         background-color:gray;
+        text-align: center;
+        font-size:28px;
     }
     
-    #topline{
+    td#topline{
         background-color: gray;
+        font-size: 24px;
+    }
+    
+    td{
+        font-size: 20px;
+    }
+    
+    .panel-title{
+        color: #34FBED;
+        font-size: 36px;
     }
     
 </style>
@@ -22,22 +34,22 @@
     <h2>Full Itinerary</h2>
     Below is our full itinerary for KWEST Hawaii. Click a day to see the hour-by-hour details & things you need for the day!
 </header>
-
+<br>
 <article>
-<div class="row"><div class="col"><h3 id="Days">Day 1 </h3></div><div class="col"><h3>August 24 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%></div></h3> <div class="col-sm-3"> <button class="btn btn-primary btn-block" data-toggle="collapse" style="background-color:red;" data-target="#day1content">See details</button>
-</h3></div></div>
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day1content"><h3 class="panel-title">Day 1 - August 24 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%></h3></button>
+
 <div id="day1content" class="collapse">
 <h4>Hour-by-hour</h4>
     <table border="1" id="daycontent" class="table-hover">
         <tbody>
             <tr>
-                <td colspan="4" id="day">Saturday August 24</td>
+                <td colspan="4" id="day">Saturday</td>
             </tr>
             <tr>
-                <td id="topline"><b>Start Time</b></td>
-                <td id="topline"><b>End Time</b></td>
-                <td id="topline"><b>Activity</b></td>
-                <td id="topline"><b>Location</b></td>
+                <td id="topline">Start Time</td>
+                <td id="topline">End Time</td>
+                <td id="topline">Activity</td>
+                <td id="topline">Location</td>
             </tr>
             <tr>
                 <td>3:45am</td>
@@ -61,7 +73,7 @@
                 <td>6:25am</td>
                 <td>10:40am</td>
                 <td>Flight to SFO</td>
-                <td>FLIGHT INFO</td>
+                <td>AA1203</td>
             </tr>
             <tr>
                 <td>10:40am</td>
@@ -73,7 +85,7 @@
                 <td>11:55pm</td>
                 <td>2:22pm</td>
                 <td>Flight to Honolulu</td>
-                <td>FLIGHT INFO</td>
+                <td>AA743</td>
             </tr>
             <tr>
                 <td>2:22pm</td>
@@ -85,7 +97,7 @@
                 <td>3:30pm</td>
                 <td>6:45pm</td>
                 <td>Check In @ Hotel, Relax and Get Ready for Night</td>
-                <td>Hotel</td>
+                <td>Hotel - Waikiki Resort Hotel</td>
             </tr>
             <tr>
                 <td>6:45pm</td>
@@ -114,6 +126,7 @@
         </tbody>
     </table>
 
+<div>
 
 <h4>What do I need this day?</h4>
     <ul>
@@ -124,27 +137,29 @@
             Anything to be comfy on the plane
         </li>
         <li>
-            Theme for the night is Fun and Fancy Florals - *insert links here*
+            Theme for the night is NEON
         </li>
     </ul>
 </div>
 
+</div>
+<br>
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day2content"><h3 class="panel-title" style="color:#34FBED;">Day 2 - August 25 - <%= Emoji.find_by_alias("ocean").raw %> <%=Emoji.find_by_alias("sunny").raw %> <%=Emoji.find_by_alias("game_die").raw%></h3></button>
 
-<div class="row"><div class="col"><h3>Day 2 </h3> </div><div class="col"> <h3> August 25 - <%= Emoji.find_by_alias("ocean").raw %> <%=Emoji.find_by_alias("sunny").raw %> <%=Emoji.find_by_alias("game_die").raw%> </h3></div> <div class="col-sm-3"><button class="btn btn-primary btn-block" data-toggle="collapse" style="background-color:red;" data-target="#day2content">See details</button></div></div>
-</h3>
+
 <section id="day2content" class="collapse">
 
     <h4>Hour-by-hour</h4>
-    <table border="1">
+    <table border="1" id="daycontent" class="table-hover">
         <tbody>
             <tr>
-                <td colspan="4">Sunday August 25</td>
+                <td colspan="4" id="day">Sunday</td>
             </tr>
             <tr>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Activity</td>
-                <td>Location</td>
+                <td id="topline">Start Time</td>
+                <td id="topline">End Time</td>
+                <td id="topline">Activity</td>
+                <td id="topline">Location</td>
             </tr>
             <tr>
                 <td>8:00am</td>
@@ -213,30 +228,30 @@
             Coverups, gym shorts, shirts - whatever you need to be comfortable at Dukes
         </li>
         <li>
-            Pizza and Game Night dress up "theme" is pajamas (tbh just wear whatever you feel comfortable in but onesies, pj pants, etc are all welcome and encouraged!!!)
+            Pizza and Game Night dress up "theme" is pajamas (tbh just wear whatever you feel comfortable in)
         </li>
     </ul>
     
 </section>
 
+<br>
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day3content"><h3 class="panel-title" style="color:#34FBED;">Day 3 - August 26 - <%= Emoji.find_by_alias("palm_tree").raw %> <%= Emoji.find_by_alias("turtle").raw %> <%= Emoji.find_by_alias("tropical_drink").raw %></h3></button>
 
 
-<div class="row"><div class="col"><h3>Day 3</h3></div><div class="col"><h3>August 26 - <%= Emoji.find_by_alias("palm_tree").raw %> <%= Emoji.find_by_alias("turtle").raw %> <%= Emoji.find_by_alias("tropical_drink").raw %> </h3></div> <div class="col-sm-3"><button class="btn btn-primary btn-block" data-toggle="collapse" style="background-color:red;" data-target="#day3content">See details</button></div>
-</h3></div>
 
 <section id="day3content" class="collapse">
 
 <h4>Hour-by-hour</h4>
-    <table border="1">
+    <table border="1" id="daycontent" class="table-hover">
         <tbody>
             <tr>
-                <td colspan="4">Monday August 26</td>
+                <td colspan="4" id="day">Monday</td>
             </tr>
             <tr>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Activity</td>
-                <td>Location</td>
+                <td id="topline">Start Time</td>
+                <td id="topline">End Time</td>
+                <td id="topline">Activity</td>
+                <td id="topline">Location</td>
             </tr>
             <tr>
                 <td>8:45am</td>
@@ -318,28 +333,30 @@
             Comfortable shoes and clothes for a semi-active day
         </li>
         <li>
-            Tiki Bar Crawl theme is *insert here*
+            Tiki Bar Crawl theme is Fun & Fancy Florals!
         </li>
     </ul>
     
 </section>    
 
 
-<h3>Day 4 - August 27 - <%= Emoji.find_by_alias("airplane").raw %> <%= Emoji.find_by_alias("tropical_fish").raw%> <%=Emoji.find_by_alias("swimmer").raw%> <button class="btn btn-primary" data-toggle="collapse" style="background-color:red;" data-target="#day4content">See details</button>
-</h3>
+<br>
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day4content"><h3 class="panel-title" style="color:#34FBED;">Day 4 - August 27 - <%= Emoji.find_by_alias("airplane").raw %> <%= Emoji.find_by_alias("tropical_fish").raw%> <%=Emoji.find_by_alias("swimmer").raw%></h3></button>
 
-<section id="day4content" class="collapse">
+
+
+<section id="day4content" class="collapse" id="daycontent" class="table-hover">
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
             <tr>
-                <td colspan="4">Tuesday August 27</td>
+                <td colspan="4" id="day">Tuesday</td>
             </tr>
             <tr>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Activity</td>
-                <td>Location</td>
+                <td id="topline">Start Time</td>
+                <td id="topline">End Time</td>
+                <td id="topline">Activity</td>
+                <td id="topline">Location</td>
             </tr>
             <tr>
                 <td>9:00am</td>
@@ -413,21 +430,24 @@
     
 </section>  
 
-<h3>Day 5 - August 28 - <%= Emoji.find_by_alias("volcano").raw%> <%= Emoji.find_by_alias("dancers").raw%> <%= Emoji.find_by_alias("question").raw%> <button class="btn btn-primary" data-toggle="collapse" style="background-color:red;" data-target="#day5content">See details</button>
-</h3>
+<br>
 
-<section id="day5content" class="collapse">
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day5content"><h3 class="panel-title" style="color:#34FBED;">Day 5 - August 28 - <%= Emoji.find_by_alias("volcano").raw%> <%= Emoji.find_by_alias("dancers").raw%> <%= Emoji.find_by_alias("question").raw%></h3></button>
+
+
+
+<section id="day5content" class="collapse" id="daycontent" class="table-hover">
 <h4>Hour-by-hour</h4>
     <table border="1">
         <tbody>
             <tr>
-                <td colspan="4">Wednesday August 28</td>
+                <td colspan="4" id="day">Wednesday</td>
             </tr>
             <tr>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Activity</td>
-                <td>Location</td>
+                <td id="topline">Start Time</td>
+                <td id="topline">End Time</td>
+                <td id="topline">Activity</td>
+                <td id="topline">Location</td>
             </tr>
             <tr>
                 <td>7:00am</td>
@@ -489,22 +509,25 @@
     
 </section> 
 
+<br>
 
-<h3>Day 6 - August 29 - <%= Emoji.find_by_alias("dolphin").raw %> <%= Emoji.find_by_alias("beers").raw %> <%= Emoji.find_by_alias("airplane").raw%> <button class="btn btn-primary" data-toggle="collapse" style="background-color:red;" data-target="#day6content">See details</button>
-</h3>
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day6content"><h3 class="panel-title" style="color:#34FBED;">Day 6 - August 29 - <%= Emoji.find_by_alias("dolphin").raw %> <%= Emoji.find_by_alias("beers").raw %> <%= Emoji.find_by_alias("airplane").raw%></h3></button>
+
+
+
 
 <section id="day6content" class="collapse">
 <h4>Hour-by-hour</h4>
-    <table border="1">
+    <table border="1" id="daycontent" class="table-hover">
         <tbody>
             <tr>
-                <td colspan="4">Thursday August 29</td>
+                <td colspan="4" id="day">Thursday</td>
             </tr>
             <tr>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Activity</td>
-                <td>Location</td>
+                <td id="topline">Start Time</td>
+                <td id="topline">End Time</td>
+                <td id="topline">Activity</td>
+                <td id="topline">Location</td>
             </tr>
             <tr>
                 <td>7:00am</td>
@@ -587,32 +610,31 @@
             Coverups, gym shorts, whatever you need to be comfortable at Kona Brewing Co after snorkeling
         </li>
         <li>
-            Chinatown Bar Crawl theme is *insert theme here*
+            Chinatown Bar Crawl theme is Cartoon Characters!
         </li>
     </ul>
     
 </section> 
 
+<br>
 
-<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day7content"><h3 class="panel-title" style="color:#34FBED;">Day 7 - August 31 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%></h3></button>
+<button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day7content"><h3 class="panel-title" style="color:#34FBED;">Day 7 - August 30 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%></h3></button>
 
-<!--<div class="panel-group"> <div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title"><a data-toggle="collapse" href="#day7content">Day 7 - August 31 - <%= Emoji.find_by_alias("cry").raw %> <%= Emoji.find_by_alias("wave").raw%> <%=Emoji.find_by_alias("airplane").raw%> </a> </h3>
-</div> -->
 
 
 <div id="day7content" class="panel-collapse collapse">
     <div class="panel-body">
 <h4>Hour-by-hour</h4>
-    <table border="1">
+    <table border="1" id="daycontent" class="table-hover">
         <tbody>
             <tr>
-                <td colspan="4">Friday August 31</td>
+                <td colspan="4" id="day">Friday</td>
             </tr>
             <tr>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Activity</td>
-                <td>Location</td>
+                <td id="topline">Start Time</td>
+                <td id="topline">End Time</td>
+                <td id="topline">Activity</td>
+                <td id="topline">Location</td>
             </tr>
             <tr>
                 <td>Whenever you wake up</td>
@@ -671,11 +693,20 @@
         <li>
             Anything you need to be comfortable on the flight back! (maybe change of clothes for when you transfer in Seattle)
         </li>
-    </ul>
+        <li>
+            Then go home, relax and get ready for CIM!!!!!!!!!
+        </li>
+    </u1>
+
 </div>
+
 </div>
+
 </div>
+
 </div> 
+
+
 
 </article>
 </body>

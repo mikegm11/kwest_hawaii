@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   
   match("/new_guess_form", { :controller => "guesses", :action => "blank_form", :via => "get" })
   match("/insert_guess_record", { :controller => "guesses", :action => "save_new_info", :via => "post" })  
-  match("/guesses/:name", {:controller => "guesses", :action => "list", :via => "get"})
+  
+  match("/guessesall", {:controller => "guesses", :action => "show_all", :via => "get"})
   
 end

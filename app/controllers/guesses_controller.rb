@@ -22,16 +22,15 @@ class GuessesController < ApplicationController
       redirect_to("/new_guess_form", { :notice => "Success!" })
     end
     
-    def show
-        @guess = Guess.find(params[:id])
+    def show_all
+        @guess = Guess.all
+        render("pages/listguess.html.erb")
     end
     
     
     def list
-        @q = Guess.ransack(params[:q])
-        @guess = @q.result(:distinct => true).include(:name)
-        
-        render("pages/listguess.html.erb")
+
+
     end
     
     
