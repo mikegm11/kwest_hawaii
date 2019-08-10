@@ -52,6 +52,13 @@
       Packing List
     </a>
 
+  <% a = Date.today %>
+  <% b = Date.parse("2019-08-10") %> <!-- need to CHANGE TO 27TH BEFORE PUSHING OUT TO KWESTEES -->
+  <% if a >= b %>
+    <a class="navbar-link" href="/new_guess_form" style="color:#34FBED;">
+      <em>Submit big reveal guess!</em>
+    </a>
+  <% end %>
   </nav>
   
   <div class="container-fluid" style="padding-top:70px">

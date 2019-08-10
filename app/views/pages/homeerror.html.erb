@@ -9,8 +9,36 @@
 <body>
     
     <section>
-    Currently, the temperature is <%= parsed_data.fetch("currently").fetch("temperature") %> Fahrenheit.
+    Currently, the temperature is <% a=parsed_data.fetch("currently").fetch("temperature")%> <%=a.round%>&#8457; (<%= ((a-32)*5/9).round %>&#8451;).
     The forecast is <%= parsed_data.fetch("currently").fetch("summary").downcase%>.
     </section>
     
 </body>
+
+<!--plans for the 24th -->
+<% if a == Date.parse("2019-08-24") %>
+8j
+<!--plans for the 25th -->
+<% elsif a == Date.parse("2019-08-25") %>
+a
+<!--plans for the 26th -->
+<% elsif a == Date.parse("2019-08-26") %>
+b
+<!--plans for the 27th -->
+<% elsif a == Date.parse("2019-08-27") %>
+b
+<!--plans for the 28th -->
+<% elsif a == Date.parse("2019-08-28") %>
+c
+<!--plans for the 29th -->
+<% elsif a == Date.parse("2019-08-29") %>
+d
+<!--plans for the 30th -->
+<% elsif a == Date.parse("2019-08-10") %>
+e
+
+<% else %>
+<h3>Today's plan</h3>
+We will be doing XYZ today - probably need ABC (but check the weather at the top!)
+
+<% end %>

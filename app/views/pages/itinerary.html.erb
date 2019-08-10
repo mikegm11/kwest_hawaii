@@ -28,14 +28,23 @@
     
 </style>
 
+
+
 <body style="background-color=#a89532;">
 
+
+  <% a = Date.today %>
+  <% b = Date.parse("2019-08-23") %> <!-- need to CHANGE TO 23rd BEFORE PUSHING OUT TO KWESTEES -->
+  
+<% if a >= b %>
 <header>
     <h2>Full Itinerary</h2>
     Below is our full itinerary for KWEST Hawaii. Click a day to see the hour-by-hour details & things you need for the day!
 </header>
 <br>
 <article>
+
+
 <button class="btn btn-primary" data-toggle="collapse" style="background-color:#21A4B9;display:block;border:none;text-align:center;width:100%;font-family:'Lobster',cursive;" data-target="#day1content"><h3 class="panel-title">Day 1 - August 24 - <%= Emoji.find_by_alias("airplane").raw%>  <%=Emoji.find_by_alias("arrow_right").raw%> <%=Emoji.find_by_alias("champagne").raw%></h3></button>
 
 <div id="day1content" class="collapse">
@@ -706,8 +715,12 @@
 
 </div> 
 
+<% else %>
+
+TO BE REVEALED!!!!!!!!!!!!!!
 
 
+<% end %>
 </article>
 </body>
 <script type="text/javascript">
